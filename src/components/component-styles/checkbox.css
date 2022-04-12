@@ -1,0 +1,63 @@
+.CBCard {
+  padding: 20px 0;
+}
+
+.CBCard > h3 {
+  margin-left: 20px;
+}
+
+.CheckboxStops {
+  margin-top: 20px;
+}
+
+.CheckboxControll {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.CBWrapp:hover {
+  background: #f1fcff;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  margin-right: 10px;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9abbce;
+  border-radius: 2px;
+}
+
+input[type="checkbox"]:checked {
+  border-color: #2196f3;
+}
+
+input[type="checkbox"]:checked:after {
+  /* Heres your symbol replacement - this is a tick in Unicode. */
+  content: url("../../assets/img/Shape.svg");
+  color: #2196f3;
+  /* The following positions my tick in the center, 
+   * but you could just overlay the entire box
+   * with a full after element with a background if you want to */
+  position: absolute;
+  left: 52%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /*
+   * If you want to fully change the check appearance, use the following:
+   * content: " ";
+   * width: 100%;
+   * height: 100%;
+   * background: blue;
+   * top: 0;
+   * left: 0;
+   */
+}
