@@ -1,0 +1,71 @@
+.Ticket {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.TicketUpper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.TicketLower {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Info {
+  width: 140px;
+  height: 40px;
+}
+
+.Info + .Info {
+  margin-left: 20px;
+}
+
+.TicketSegment {
+  display: flex;
+  height: 40px;
+  width: 100%;
+}
+
+.TicketSegment + .TicketSegment {
+  margin-top: 10px;
+}
+
+.SegmentInfo {
+  width: 100%;
+}
+
+.InfoHeader {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+
+  color: #a0b0b9;
+}
+
+.InfoData {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+
+  color: #4a4a4a;
+}
+
+.Price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+
+  color: #2196f3;
+}
